@@ -1,0 +1,105 @@
+Chapter 2
+
+
+What is char's min size?
+8 bits
+
+
+What is wchar_t's min size?
+16 bits
+
+
+What is char16_t's min size?
+16 bits
+
+
+What is char32_t's min size?
+32 bits
+
+
+What is short's min size?
+16 bits
+
+
+What is int min's size?
+16 bits
+
+
+What is long's min size?
+32 bits
+
+
+What is long long's min size?
+64 bits
+
+
+What is float's min precision?
+6 significant digits
+
+
+What is double's min precision?
+10 significant digits
+
+
+What is float's typical size?
+32 bits
+
+
+What is double's typical size?
+64 bits
+
+
+Is char signed or unsigned?
+It depends on the compiler
+
+
+How should signed types be represented according to the standard?
+The standard does not specify a representation.
+
+
+What is the supported range of signed types according to the standard?
+The range should be evenly divided between positive and negative values.
+
+
+Should you use char to store small integers?
+No, char is signed on some machines and unsigned on others.
+
+
+What type should you use to store a small integer?
+Either signed chat or unsigned char (not char).
+
+
+What is value of a bool when assigned a non-bool arithmetic value?
+False if 0, true otherwise
+
+
+What is the value of a non-bool when assigned a bool value?
+1 if the bool is true, 0 if the bool is false
+
+
+What is the value of an unsigned type when assigned an out-of-range value?
+The value modulo the number of values the type can hold (i.e. unsigned char a = -1; // a == 255)
+
+
+What is the value of a signed type when assigned an out-of-range value?
+This is undefined behavior
+
+
+What happens when both a signed and unsigned values are used in an expression?
+The signed type is converted to an unsigned type.
+
+
+What is the output of the following program?
+  unsigned u = 10;
+  int i = -42;
+  std::cout << u + i << std::endl;
+(std::numeric_limits<unsigned>.max() - 42) + u // i is converted to type unsigned
+
+
+What is the output of the following program?
+  for (unsigned u = 10; u >= 0; --u)
+      std::cout << u << std:endl;
+The loop never terminates (u is always >= 0).
+
+
+2.1.3 (page 38)
