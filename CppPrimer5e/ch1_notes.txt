@@ -1,0 +1,25 @@
+Chapter 1
+
+
+How to compile a cpp file with Visual C++?
+cl /EHsc file.cpp
+
+
+How to include a standard library?
+#include <name_of_lib_without_h_suffix> // no semicolon
+
+
+How to include a custom library?
+#include "name_of_lib.h" // no semicolon
+
+
+What is std::endl?
+A stream manipulator that ends the current line and flushs the device buffer.
+
+
+How to input EOF in Windows?
+Ctrl-z
+
+
+How to input EOF on Unix systems?
+Ctrl-d
