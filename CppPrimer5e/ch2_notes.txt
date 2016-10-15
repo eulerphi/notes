@@ -114,6 +114,7 @@ How to make an integer literal a long long?
 Add LL suffix (e.g. 42LL)
 
 
+How to make an integer literal an unsigned long long?
 Add U and LL suffixes (e.g. 42ULL)
 
 
