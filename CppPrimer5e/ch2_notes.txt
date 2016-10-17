@@ -187,8 +187,44 @@ This is an error. References must be bound to objects, not literals or expressio
 What is the behavior of the following:
   double pi = 3.14;
   int &r = pi.
-This is an error. Initializer must be same type.
+This is an error. The types must match.
 
 
-2.3.2
+What is the behavior of the following:
+  double d;
+  int *p = &d;
+This is an error. The types must match.
 
+
+How to initialize a pointer to null?
+int *p = nullptr;
+
+
+What is the behavior of the following:
+  int zero = 0;
+  int *p = zero;
+This is an error (cannot convert from int to int*). 
+
+
+Are p1 and p2 equal?
+  int i = 0;
+  int *p1 = &i, *p2 = &i;
+Yes, they point to the same location in memory.
+
+
+Are p1 and p2 equal?
+  int i = 0, j = 0;
+  int *p1 = &i, *p2 = &j;
+No, they point to different locations in memory.
+
+
+Are p1 and p2 equal?
+  int *p1, *p2;
+This is undefined behavior (p1 and p2 are undefined).
+
+
+What pointer type can hold the address of any object?
+void*
+
+
+2.3.3
