@@ -149,4 +149,46 @@ What is the output of the following?
 This is undefined behavior.
 
 
-2.2.2
+What is a declaration?
+A declaration makes a name known to the program.
+
+
+What is a definition?
+A definition creates the associated entity.
+
+
+How to declare a variable?
+Add the extern keyword, e.g.
+extern int i; // declares but does not define i
+int j; // declares and defines j
+
+What is the behavior of the following code?
+  extern double pi = 3.14;
+pi is declared and defined. Providing an initializer overrides the extern.
+
+
+What is the behavior of the following:
+  int i = 100, sum = 0;
+  for (int i = 0; i != 10; ++i)
+    sum += i;
+Since i is redefined in a nested scope, the outer i is shadowed.
+
+
+What is the behavior of the following:
+  int &r;
+This is an error. References must be initialized.
+
+
+What is the behavior of the following:
+  int &r = 10;
+This is an error. References must be bound to objects, not literals or expressions.
+
+
+What is the behavior of the following:
+  double pi = 3.14;
+  int &r = pi.
+This is an error. Initializer must be same type.
+
+
+2.3.2
+
