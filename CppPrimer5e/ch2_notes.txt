@@ -296,4 +296,17 @@ const int temp = dv;
 const int &r = temp;
 
 
-2.4.2
+What is the behavior of the following:
+  const double pi = 3.14;
+  double *p = &pi;
+Error. p must be a pointer to const to store a const value.
+
+
+What is the behavior of the following:
+  int x = 42, y = 42;
+  int *const p = &x;
+  p = &y;
+Error. p is a const pointer (i.e. read-only)
+
+
+2.4.3
