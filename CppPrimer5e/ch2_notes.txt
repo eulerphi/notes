@@ -382,4 +382,66 @@ What is the behavior of the following:
 s: const char*, ps: pointer to const char*
 
 
-2.5.2
+What is the behavior of the following:
+  auto x = 0, pi = 3.14;
+Error. x and pi are different types
+
+
+What is the type of x:
+  const int ci = 42;
+  auto x = ci;
+int (top-level const is dropped)
+
+
+What is the type of x:
+  const int ci = 42, &cr = ci;
+  auto x = cr;
+int (top-level const is dropped)
+
+
+What is the type of x:
+  int i = 42;
+  auto x = &i;
+int*
+
+
+What is the type of x:
+  const int ci = 42;
+  auto x = &ci;
+const int* (low-level const is kept)
+
+
+What is the behavior of the following:
+  auto i = 42, p = &i;
+Error. Must specify * for p.
+
+
+How to specify we want a top-level const for auto?
+const auto x = 42;
+
+
+How to specify we want a reference for auto?
+int i = 42;
+const auto &x = i;
+
+
+How to specify we want a pointer for auto?
+auto i = 42, *p1 = &i;
+auto p2 = &i; // p1 & p2 are pointers
+
+
+What is the behavior of the following:
+  int i = 1;
+  const int ci = 42;
+  auto &x = i, *p = &ci;
+Error. Deduced type of x and y differ.
+
+
+What is the behavior of the following:
+  struct Foo { int x; }
+Error. The trailing semicolon is missing.
+
+
+What is the behavior of the following:
+  struct Foo { /* ... */ } x, y, z;
+Valid, but obscures the code by combining class and variable statements.
