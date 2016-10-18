@@ -270,7 +270,7 @@ const int &r = temp;
 What is the behavior of the following:
   const int i = 1024;
   int &r = i;
-Error. r must be a const reference.
+Error. r must be a reference to const
 
 
 What is the behavior of the following:
@@ -309,4 +309,77 @@ What is the behavior of the following:
 Error. p is a const pointer (i.e. read-only)
 
 
-2.4.3
+What is the behavior of the following:
+  const int i = -1, &r = 0;
+Valid. r is a reference to const
+
+
+What is the behavior of the following:
+  const int &const r;
+Error. Const variables must be initialized. Also &const is not needed.
+
+
+What is top-level const?
+Top-level const indicates that an object itself is const.
+
+
+What is low-level const?
+Low-level const indicates that a compound type can point to a const object.
+
+
+What is the behavior of the following:
+const int c = 42;
+int i = c;
+Valid. c is not modified when copied.
+
+
+What is the behavior of the following:
+  const int i = 42, *const p = &i;
+  const int *p2 = p;
+Valid. p is not modified when copied.
+
+
+What is the behavior of the following:
+  const int i = 42, *p = &i;
+  int *p2 = p;
+Error. Cannot convert from const int * to int * (low-level const must match).
+
+
+Indicate whether the object being declared has top-level or low-level const:
+  const int v2 = 0; int v1 = v2;
+  int *p = &v1, &r1 = v1;
+  const int *p2 = &v2, *const p3 = &v1, &r2 = v2;
+v2: top-level, p2: low-level, p3: both, r2: low-level
+
+
+What is constexpr?
+A const variable whose value is evaluated at compile time.
+
+
+How to fix the following:
+  int null = 0, *p = null;
+Change int to be:
+constexpr int null = 0;
+
+
+What is the behavior of the following:
+  typedef double wages;
+  typedef wages base, *p;
+wages: alias for double
+base: alias for double
+p: alias for double*
+
+
+What is the behavior of the following:
+  using SI = Sales_Item;
+SI: alias for Sales_Item
+
+
+What is the behavior of the following:
+  typedef char *pstr;
+  const pstr s = 0;
+  const pstr *ps;
+s: const char*, ps: pointer to const char*
+
+
+2.5.2
