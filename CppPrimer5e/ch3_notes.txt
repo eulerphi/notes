@@ -1,0 +1,110 @@
+Chapter 3
+
+
+How to use a name from a namespace without qualifying the name?
+using std; // entire namespace
+using std::cin; // specific object
+
+
+Can headers include using statements?
+Yes, but it is best avoided to prevent unexpected name conflicts.
+
+
+What is the value of s1:
+  string s1;
+Default initialization; s1 is empty
+
+
+What is the value of s2:
+  string s1;
+  string s2 = s1;
+s2 is a copy of s1
+
+
+What is the value of s3:
+  string s3 = "hello";
+s3 is a copy of the string literal
+
+
+What is the value of s4:
+  string s4(10, 'c');
+s4 is cccccccccc
+
+
+How to check is a string is empty?
+s.empty();
+
+
+How to get a string's length?
+s.size();
+
+
+What is the behavior of the following:
+  string s1 = "hello", s2 = "Hello";
+  auto is_gte = s1 >= s2;
+is_gtr == false. The comparison is case-sensitive and uses dictionary ordering.
+
+
+What is the behavior of the following:
+  string s1, s2;
+  cin >> s1 >> s2; // input: "     Hello World!    "
+  cout << s1 << s2 << endl;
+Output: "HelloWorld!". The leading and trailing whitespace is ignored and the space between words is used for deliminate
+
+
+What is the value of line:
+  string line;
+  getline(cin, line); // input: "  Hello, World!  \n"
+line == "  Hello, World!  " // newline is discarded
+
+
+What is the return type of string::size()?
+string::size_type
+
+
+What is the value of flag:
+  int n = -42;
+  auto flag = s.size() < n; // s is a string
+flag will likely be true. n will be converted to unsigned int (because string::size_type is unsigned)
+
+
+How to print out every char of a string?
+for (auto c : str)
+  cout << c << endl;
+
+
+How to check if a char is alphanumeric?
+isalnum(c);
+
+
+How to check if a char is alpha?
+isalpha(c);
+
+
+How to check if a char is control char?
+iscntrl(c)?
+
+
+How to check if a char is numeric?
+isdigit(c);
+
+
+How to check if a char is lowercase?
+islower(c);
+
+
+How to check if a char is uppercase?
+isupper(c);
+
+
+How to check if a char is whitespace?
+isspace(c);
+
+
+How to convert a char to lowercase?
+tolower(c);
+
+
+How to convert a char to uppercase?
+toupper(c);
+  
