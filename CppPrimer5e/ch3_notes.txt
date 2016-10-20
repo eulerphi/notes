@@ -2,7 +2,7 @@ Chapter 3
 
 
 How to use a name from a namespace without qualifying the name?
-using std; // entire namespace
+using namespace std; // entire namespace
 using std::cin; // specific object
 
 
@@ -73,6 +73,10 @@ for (auto c : str)
   cout << c << endl;
 
 
+What header defines functions to classify and transform individual characters?
+#include <cctype>
+
+
 How to check if a char is alphanumeric?
 isalnum(c);
 
@@ -126,4 +130,201 @@ What is the behavior of the following:
 c is a copy and only the copy will be updated.
 
 
-3.3
+What is the behavior of the following:
+  vector<string&> list;
+Error. Cannot have vector of references (references are not objects)
+
+
+What is the behavior of the following:
+  vector<int> iv = {1, 2, 3};
+  vector<int> iv2(iv);
+iv is lis initialized with items 1,2,3. iv2 is initialized with a copy of the items in iv
+
+
+What is the behavior of the following:
+  vector<int> iv;
+  vector<string> sv(iv);
+Error. Template types must match.
+
+
+What is the behavior of the following:
+  vector<string> sv(5, "hi!");
+sv is initialized with 5 strings; each item is "hi!"
+
+
+What is the behavior of the following:
+  vector<int> iv(10);
+iv is initialized with 10 items; each item is value initialized (i.e. initialized to 0)
+
+
+What is the behavior of the following:
+  vector<SomeClass> v(5);
+It depends on whether SomeClass has a default ctor. If not, then error.
+
+
+What is the behavior of the following:
+  vector<string> v{10};
+v has ten default-initialized strings; equivalent to v(10).
+
+
+What is the behavior of the following:
+  vector<string> v{10, "hi"};
+v has ten items with value "hi"; equivalent to v(10, "hi")
+
+
+How to add an element to a vector?
+v.push_back(item);
+
+
+How to add [0, 9] to a vector?
+vector<int> v;
+for (int i = 0; i != 10; ++i)
+  v.push_back(i);
+
+
+How to store a list of ints from cin?
+vector<int> v;
+int i;
+while (cin >> i)
+  v.push_back(i);
+
+
+What is the return type of vector<T>::size()?
+vector<T>::size_type
+
+
+What are the values of b and e?
+  vector<int> v{1, 2, 3};
+  auto b = v.begin(), e = v.end();
+b is positioned at the first item in v, e is positioned one past the end of v.
+
+
+What is the value of v?
+  vector<int> v;
+  auto b = v.begin();
+b is an off-the-end iterator (v is empty)
+
+
+How to uppercase each char in a string with iterators?
+string s("hi");
+for (auto it = s.begin(); it != s.end(); ++it)
+  *it = toupper(*it);
+
+
+How to a const iterator to beginning and end of container?
+auto b = container.cbegin(), e = container.cend();
+
+
+What is the value of n?
+  string s("hello");
+  auto n = s.cend() - s.cbegin();
+5. Subtracting iterators yields the number that must be added to the rhs to get the lhs.
+
+What is the value of flag?
+  string s("za");
+  bool flag = s.cbegin() < ++s.cbegin();
+True. Relational operator on iterators compare position in the container.
+
+
+How to get an iterator to the midpoint of a container?
+auto mid = container.begin() + container.size() / 2;
+
+
+What is the return type of subtracting to iterators?
+difference_type (a signed integral type)
+
+
+How to binary search using iterators?
+auto b = v.begin(), e = v.end(), m = b + (e - b)/2;
+while (m != e && *m != sought) {
+  if (sought < *m) e = m;
+  else b = m + 1;
+  m = b + (e - b)/2;
+}
+
+
+What are the values of arr?
+  int arr[10];
+Ten default initialized ints (i.e. uninitialized ints when defined in a function)
+
+
+What is the behavior of the followng:
+  unsigned n = 42;
+  int arr[n];
+Error. Array dimension must be a constant expression (i.e. constexpr unsigned n = 42)
+
+
+What is the behavior of the following:
+  int arr[10] = {};
+The items in arr are value initialized (i.e. initialized to 0)
+
+
+Are s1 and s2 equivalent?
+  char s1[] = { 'h', 'i' };
+  char s2[] = "hi";
+No, s2 has a null terminator at the end
+
+
+What is the behavior of the following:
+  int *arr[10];
+arr is an array of int*
+
+
+What is the behavior of the following:
+  int &arr[10];
+Error. References are not objects.
+
+
+What is the behavior of the following:
+  int (*arr)[10];
+A pointer to an array of ten ints
+
+
+What is the behavior of the following:
+  int (&arr)[10] = arr2;
+A reference to an array of ten ints
+
+
+What is the behavior of the following:
+  int *(&arr)[10] = arr2;
+A reference to an array of ten int*
+
+
+Which header contains types implicitly generated or used by certain language expressions?
+#include <cstddef>
+
+
+What type to use when indexing into an array?
+size_t
+
+
+Where is size_t defined?
+#include <cstddef>
+
+
+What is the behavior of the following:
+  unsigned scores[11], grade;
+  while (cin >> grade)
+    if (grade <= 100) ++scores[grade/10];
+scores contains uninitialized values
+
+
+What is the type of x?
+  int arr[] = {1, 2};
+  auto x(arr);
+x is an int* that points at the first item in arr
+
+
+How to get a pointer to first item in an array?
+begin(arr);
+
+
+How to get a pointer to one past the last item in an array?
+end(arr);
+
+
+What is the return type when subtracting two pointers?
+ptrdiff_t (a signed integral type defined in cstddef)
+
+
+3.5.4
