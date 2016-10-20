@@ -107,4 +107,23 @@ tolower(c);
 
 How to convert a char to uppercase?
 toupper(c);
-  
+
+
+How to change convert every char in a string to uppercase?
+for (auto &c : str)
+  c = toupper(c);
+
+
+What is the behavior of the following:
+  string s = "Hello, World";
+  auto c = s[-1];
+Undefined. The -1 is converted to string::size_type (which is unsigned).
+
+
+What is the behavior of the following:
+  for (auto c : str)
+    c = toupper(c);
+c is a copy and only the copy will be updated.
+
+
+3.3
