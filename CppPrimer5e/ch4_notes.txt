@@ -1,0 +1,39 @@
+Chapter 4
+
+
+What is an lvalue?
+When we use an object as an lvalue, we use its identity (its location in memory)
+
+
+What is an rvalue?
+When we use an object as a rvalue, we use its value (its content)
+
+
+When to use an lvalue versus an rvalue?
+Can use an lvalue when an rvalue is required, but cannot use an rvalue when an lvalue is required.
+
+
+What is the behavior of the following:
+  int i = 0;
+  cout << i << ' ' << ++i << endl;
+Undefined. It is an error for an expression to refer to and change the same object.
+
+
+What is the value of b2?
+  bool b = true;
+  bool b2 = -b;
+b2 == true (-b promotes b to an int value of 1, then negates it which is nonzero)
+
+
+What is the value of b?
+  int i = 3, j = 2, k = 1;
+  bool b = i < j < k;
+True. i < j => 0. 0 < 1 => true
+
+
+What is the value of b?
+  bool b = val == true;
+True if val == 1, false otherwise
+
+
+4.5
