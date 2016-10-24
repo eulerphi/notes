@@ -63,6 +63,7 @@ The size of the pointer (in bytes), then the size of int in bytes.
 
 What is the behavior of the following:
   flag ? ++x, ++y : --x, --y;
+Compiler-dependent. This expression is equivalent to (flag ? ++x, ++y : --x), --y;
 VC++: error, gcc: --y is always evaluated.
 
 
