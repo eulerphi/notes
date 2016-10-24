@@ -1,0 +1,79 @@
+Chapter 5
+
+
+What is the behavior of the following:
+  if (cond1)
+    if (cond2)
+      cout << "x";
+  else
+    cout << "y";
+The behavior does not match the indentation. Actually:
+if (cond1)
+  if (cond2)
+    cout << "x";
+  else
+    cout << "y";
+
+
+What is the behavior of the following:
+  if (int i = get_value())
+    cout << "i != 0";
+  if (!i)
+    cout << "i == 0";
+Error. i is an undeclared identifier in the second if statement.
+
+
+What is the behavior of the following:
+  char ch = getVal(); int i = 42;
+  switch (ch) { case i: break; }
+Error. Case labels must be constant integral values.
+
+
+What is the behavior of the following:
+  char ch = getValue();
+  switch (ch) { case 3.12: break; }
+Error. Case labels must be constant integral values.
+
+
+Which header contains common exception classes?
+#include <stdexcept>
+
+
+What happens when an exception is unhandled?
+std::terminate is called which calls std::terminate_handler which by default calls std::abort.
+
+
+What exception to use for a problem that can be detected only at run time?
+runtime_error
+
+
+What exception to use when a computation overflows?
+overflow_error
+
+
+What exception to use when a computation underflows?
+underflow_error
+
+
+What exception to use for a programmer error?
+logic_error
+
+
+What exception to use when the input of a function is not supported?
+domain_error
+
+
+What exception to use when the input is invalid?
+invalid_argument
+
+
+What exception to use when an operation exceeds an implementation defined max size?
+length_error
+
+
+What exception to use when accessing an element out of the defined range?
+out_of_range
+
+
+How to get an explanation from an exception?
+some_exception.what()
