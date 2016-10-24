@@ -36,4 +36,66 @@ What is the value of b?
 True if val == 1, false otherwise
 
 
-4.5
+What is the behavior of the following:
+  vector<int> xs; auto it = xs.begin();
+  *it = toupper(*it++);
+Undefined. It might evaluate to either:
+*it = toupper(*it);
+*(it + 1) = toupper(*it);
+
+
+What is the behavior of the following:
+  int x = 42;
+  x = ~x;
+How the sign bit is handled is machine dependent. Use unsigned types with bitwise operators.
+
+
+Is the following valid:
+  int *p;
+  cout << sizeof *p;
+Yes, sizeof does not evaluate its operand. Thus p is not deferenced.
+
+What is the behavior of the following:
+  int x = 42, *p = &x;
+  cout << sizeof p << sizeof *p;
+The size of the pointer (in bytes), then the size of int in bytes.
+
+
+What is the behavior of the following:
+  flag ? ++x, ++y : --x, --y;
+VC++: error, gcc: --y is always evaluated.
+
+
+What is the type of x?
+  auto x = 3.14L + 'a';
+Long double. 'a' is converted to int, then converted to long double.
+
+
+What is the type of x?
+  double d; int i;
+  auto x = d + i;
+Double. i is converted to double.
+
+
+What is the type of x?
+  double d; float f;
+  auto x = d + f;
+Double. f is converted to double.
+
+
+What is the type of x?
+  char c; float f;
+  auto x = c + f;
+Float. c converted to int, then to float.
+
+
+What is the type of x?
+  char c; short s;
+  auto x = c + s;
+Int. c and s are both promoted to int.
+
+
+What is the type of x?
+  float f; int i;
+  auto x = f + i;
+Float. i converted to float.
