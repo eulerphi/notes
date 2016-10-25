@@ -1,0 +1,43 @@
+Chapter 6
+
+
+In what order are function arguments evaluated?
+Compiler-dependent (no guarenteed order).
+
+
+What are automatic objects?
+Objects that exist only while a block is executing.
+
+
+When is cnt initialized?
+  int fun() {
+    static int cnt = 0;
+    return cnt++;
+  }
+Local static objects are initialized before the first call to the containing function.
+
+
+What is the lifetime of cnt?
+  int fun() {
+    static int cnt = 0;
+    return cnt++;
+  }
+Local static objects are destroyed when the program terminates.
+
+
+What is the value of cnt?
+  int fun() {
+    static int cnt;
+    return cnt++;
+  }
+Local static objects are value initialized (i.e. is initialized to 0).
+
+
+What are the advantages and disadvantages char&?
+  int find(char &c) {
+    return 0;
+  }
+Advantage: pass by reference instead of pass by value. Disadvantage: Cannot use temporary objects, e.g. find('a')
+
+
+6.2.3
