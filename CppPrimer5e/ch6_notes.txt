@@ -37,7 +37,105 @@ What are the advantages and disadvantages char&?
   int find(char &c) {
     return 0;
   }
-Advantage: pass by reference instead of pass by value. Disadvantage: Cannot use temporary objects, e.g. find('a')
+Advantage: pass by reference instead of pass by value.
+Disadvantage: Cannot use temporary objects, e.g. find('a') without making it const.
 
 
-6.2.3
+How to improve the following:
+  bool is_empty(string &s) { return s.empty(); }
+Change s to const string &s.
+
+
+What is the behavior of the following:
+  void print(const int xs[10]) {
+    for (size_t i = 0; i != 10; ++i) cout << xs[i];
+  }
+  int i = 10;
+  print(&i);
+It compiles because int[] parameter is turned into int*.
+
+
+What are the items in argv:
+  a.exe "param1" "param2"
+argv[0] == "a.exe" // or ""
+argv[1] == "param1"
+argv[2] == "param2"
+argv[3] == 0
+
+What is an initializer_list?
+A vector-like container type with const values useful for variadic functions.
+
+
+What is the behavior of the following:
+  char &first(string &s) { return s[0]; }
+  string s("foo");
+  first(s) = 'F';
+s == "Foo". This works because reference returns are lvalues.
+
+What is the behavior of the following:
+  char first(string &s) { return s[0]; }
+  string s("foo");
+  first(s) = 'F';
+Error. Non-reference returns are rvalues.
+
+
+What is the behavior of the following:
+  vector<string> process() { return { "a" }; }
+The return value is list initialized.
+
+
+How to indicate an unsucessful exit from a program?
+return EXIT_FAILURE; // defined in cstdlib
+
+
+When is it valid to return a reference? A reference to const?
+When the reference is to a pre-existing object.
+
+
+Declare a function that returns an array of 10 ints.
+int (*func(())[10];
+auto func() -> int(*)[10];
+
+
+What is the behavior of the following:
+  bool check(const string);
+  bool check(string);
+Error. Both versions of check accept the same parameters.
+
+
+What is the behavior of the following:
+  bool check(const string&);
+  bool check(string&);
+This works because the consts are low-level.
+
+
+How to use assert?
+#include <cassert>
+assert(/* expression */);
+
+
+How to turn off asserts?
+Define the NDEBUG preprocessor variable. The D compiler flag does this automatically.
+
+
+Declare a pointer to a function that takes a string and returns a bool.
+bool (*pf)(string);
+
+
+What is the difference between the following assignments?
+  bool (*pf)(string);
+  pf = compare_length;
+  pf = &compare_length;
+They are equivalent (address-of operator is optional).
+
+What is the difference between the following assignments?
+  bool (*pf)(string);
+  pf = compare_length;
+  pf("foo");
+  (*pf)("foo");
+They are equivalent (dereference is optional).
+
+
+Declare a function that returns a pointer to a function that returns an int and takes a string parameter.
+int (*func())(string);
+auto func(int) -> int (*)(string);

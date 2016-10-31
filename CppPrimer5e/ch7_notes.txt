@@ -1,0 +1,123 @@
+Chapter 7: Classes
+
+
+What is the behavior of the following:
+  struct Foo {
+    inline int get_value() { return 42; }
+  };
+inline is extraneous (functions defined in classes are implicitly inline).
+
+
+What is the default type of this?
+T *const
+
+
+How to decalre a const member function?
+struct Foo {
+  int get_value() const { /* */ }
+};
+
+
+How to explicitly define a synthesized default constructor?
+struct Foo {
+  Foo() = default;
+};
+
+
+How to make a class function inline?
+1. Define function body in class
+2. Mark class declaration as inline (external definition does not need to be marked)
+3. Mark external definition as inline (class declaration does not need to be marked)
+4. Mark both class declaration and external definition (extraneous)
+
+
+What is the behavior of the following:
+  class Foo {
+    mutable size_t counter;
+    public:
+      void function() const { ++counter; }
+  };
+This is legal (mutable data members can be modified in const functions).
+
+
+What is the behavior of the following:
+  struct Foo {
+    int value;
+    Foo add(int x) { value += x; return *this; } };
+  Foo f; f.add(3).add(5);
+  cout << f.value;
+f.value == 3. The add(5) is called on a copy of f.
+
+
+How to declare a class without defining it?
+class Foo;
+
+
+What functionality is supported on forward declared classes?
+We can define pointers or references to such types, and we can declare (but not define) functions that use the type as a parameter or return type.
+
+
+How to designate a class as a friend?
+class T { friend class U; };
+
+
+What is the behavior of the following:
+  struct Foo {
+    typedef size_t size;
+    size set(size);
+  };
+  Foo::size Foo::moo(size value) { /* */ }
+Correct. Foo is in scope at the start of the parameter list.
+
+
+What is the behavior of the following:
+  struct Foo {
+    typedef size_t size;
+    size set(size);
+  };
+  size Foo::moo(size value) { /* */ }
+Error. The return type size requires Foo:: scope.
+
+What is the behavior of the following:
+  struct Foo {
+    typedef size_t size;
+    size set(size value);
+  };
+  auto Foo::set(size value) -> size { /* */ }
+Correct. The return type size is in the Foo:: scope.
+
+
+What is the behavior of the following:
+  typedef double Money;
+  class Foo {
+    public: Money get() { return 0; }
+    private: typedef int Money;
+  };
+Illegal but generally compiles.
+
+
+What is the return value of get?
+  struct Foo {
+    int get(int height) { return height; }
+    private: int height = 0;
+  };
+The value of the height argument.
+
+How to return the global max value?
+  int max = 42;
+  struct Foo {
+    int get_max() { return max; }
+    private: int max = 50;
+  }
+Change "return max;" to "return ::max;".
+
+
+What is the behavior of the following:
+  struct Foo {
+    size get();
+    typedef int size;
+  };
+Error. size is undefined.
+
+
+7.5
