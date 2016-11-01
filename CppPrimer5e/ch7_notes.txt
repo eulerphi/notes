@@ -120,4 +120,43 @@ What is the behavior of the following:
 Error. size is undefined.
 
 
-7.5
+What is the behavior of the following:
+  class Foo {
+    const int ci;
+    public: Foo() { ci = 1; } };
+Error. ci must be initialized and cannot be assigned to.
+
+
+What is the behavior of the following:
+  class Foo {
+    int i; int j;
+    public: Foo(int val) : j(val), i(j) { } };
+Undefined. Members are initialized in class definition order.
+
+
+What is the behavior of the following:
+  vector<int> xs();
+  xs.push_back(1);
+Error. xs is a function. Change to "vector<int> xs" to use the default ctor.
+
+
+What is the behavior of the following:
+  struct Foo { Foo(string s) { /* */ } };
+  Foo f = "Hello";
+Correct. A single argument ctor is a converting ctor and defines an implicit conversion.
+
+
+What is the behavior of the following:
+  struct Foo { Foo(string s) { /* */ } };
+  void func(Foo f) { /* */ }
+  func("Hello");
+Error. Only one class-type conversion is applied. Either would work:
+1. func(string("Hello"));
+2. func(Foo("Hello"));
+
+How to suppress implicit converting constructor?
+Mark ctor declaration explicit keyword (do not mark the external definition). For example:
+struct Foo { explicit Foo(string s); };
+
+
+explicit direct init (296)
