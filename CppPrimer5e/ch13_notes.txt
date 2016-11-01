@@ -1,0 +1,107 @@
+Chapter 13: Copy Control
+
+
+How to declare a copy constructor?
+struct Foo {
+  Foo(const Foo &that); // const optional
+};
+
+
+What is the implementation of the syntesized copy constructor?
+Memberwise copy, e.g.
+struct Foo {
+  string s;
+  Foo(const Foo &rhs) : s(rhs.s) { } };
+
+
+When is the copy constructor synthesized?
+It is synthesized when the class does not define its own.
+
+Why must the copy constructor take a reference?
+The copy constructor is used to copy arguments to functions. Since the copy ctor uses a reference parameter, a copy isn't made.
+
+
+How to declare a copy assignment operator?
+struct Foo {
+  Foo& operator=(const Foo&);
+};
+
+
+When is the copy assignment operator synthesized?
+It is synthesized when the class does not define its own.
+
+
+What is the implementation of the syntesized copy assignment operator?
+Copy assign each data member, e.g.
+struct Foo {
+  string s;
+  Foo& operator=(const Foo& that) { s = rhs.s; } };
+
+
+What should the copy assignment operator return?
+It should return a reference to this, e.g.
+Foo& operator=(const Foo&) {
+  // copy values
+  return *this;
+}
+
+
+What class members are implicitly called in the following:
+  string s1 = "hello";
+  string s2(s1);
+s1 uses converting ctor. s2 is direct initialized using copy ctor.
+
+
+What class members are implicitly called in the following:
+  string s1 = "hello";
+  string s2 = s1;
+s1 uses converting ctor. s2 is copy initialized using copy ctor.
+
+
+What class members are implicitly called in the following:
+  string s1 = "hello";
+  string s2;
+  s2 = s1;
+s1 uses converting ctor. s2 is default initialized using default ctor, then assigned to using the copy assignmet operator.
+
+
+How to declare a destructor?
+struct Foo {
+  ~Foo();
+};
+
+
+When is the destructor synthesized?
+It is synthesized when the class does not define its own.
+
+
+What is the implementation of the syntesized destructor?
+An empty function body.
+
+
+How does the destructor work?
+1. The destructor function body is invoked.
+2. Each data members' destructor is called in reverse initialization order.
+
+
+How to prevent making copies of a object?
+Mark a class' copy ctor and copy assignment operator as deleted, e.g.
+struct Foo {
+  Foo(const Foo&) = delete;
+  Foo& operator=(const Foo&) = delete;
+};
+
+
+What is the behavior of the following:
+  struct Foo { ~Foo() = delete; };
+  delete (new Foo);
+Error. Foo cannot be deleted.
+
+
+What is the behavior of the following:
+  Foo& Foo::operator=(const Foo &rhs) {
+    delete ps; // Foo has string *ps;
+    ps = new string(*rhs.ps);
+    return *this;
+  }
+Self assignment does not work.
