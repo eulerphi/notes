@@ -155,8 +155,9 @@ Error. Only one class-type conversion is applied. Either would work:
 2. func(Foo("Hello"));
 
 How to suppress implicit converting constructor?
-Mark ctor declaration explicit keyword (do not mark the external definition). For example:
-struct Foo { explicit Foo(string s); };
+  struct Foo {
+    Foo(string s); };
+Change ctor to "explicit Foo(string s);"
 
 
 What is the behavior of the following:
