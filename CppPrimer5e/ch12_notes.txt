@@ -1,0 +1,123 @@
+Chapter 12: Dynamic Memory
+
+
+What is the value of p?
+  shared_ptr<int> p;
+Smart pointers are default initialized to null pointer.
+
+
+What header contains smart pointers?
+#include <memory>
+
+
+How to allocate a shared_ptr to an empty string?
+auto p = make_shared<string>();
+
+
+What is the value that p points to?
+  auto p = make_shared<int>();
+0. When called with no arguments, the object is value initialized.
+
+
+What is the behavior of the following:
+  auto p1 = make_shared<int>();
+  auto p2 = p1.get();
+p1 is a shared_ptr that points to a value initialized int.
+p2 is a raw and untacked int* that points at the same int.
+
+
+How are shared_ptrs internally implemented?
+shared_ptrs generally use reference counting.
+
+
+How to check if a shared_ptr has only one user?
+p.unique();
+
+
+How to get the number objects sharing a shared_ptr?
+p.use_count();
+
+
+What is the value of p?
+  int *p = new int;
+Undefined. Dynamically allocated objects are default initialized.
+
+
+How to value initialize a dynamically allocated object?
+int *p = new int(); // use empty parentheses
+
+
+What is the type and value of p?
+  auto p = new auto(obj);
+Type: obj*; Value: initialized from obj.
+
+
+What is the behavior of the following:
+  string p = new auto{a, b, c};
+Error. Can only auto-deduce from a single initializer inside parentheses.
+
+
+What is the behavior of the following:
+  string p = new auto(a, b, c);
+Error. Can only auto-deduce from a single initializer inside parentheses.
+
+
+How to allocate a const object?
+auto p = new const int(42);
+
+
+What happens if there isn't enough memory:
+  auto p = new int;
+An exception of type bad_alloc is thrown.
+
+
+What is the behavior of the following:
+  int i = 42, *p = &i;
+  delete p;
+Undefined. p points to a local object.
+
+
+What is the behavior of the following:
+  auto p1 = new int(42), p2 = p1;
+  delete p1; delete p2;
+Undefined. The heap memory was already freed.
+
+
+What is the behavior of the following:
+  int *p = nullptr;
+  delete p;
+Calling delete on a nullptr is ok.
+
+
+What is the behavior of the following:
+  void process(shared_ptr<int> p) { /* */ }
+  process(new int(42));
+Error. The shared_ptr ctor that takes pointers is explicit.
+
+
+What is the behavior of the following:
+  void process(shared_ptr<int> p) { /* */ }
+  int *p = new int(42);
+  process(shared_ptr<int>(p));
+Legal but dangerous. p is deleted when process returns.
+
+
+How to output a weak_ptr<int>'s value?
+if (shared_ptr<int> sp = wp.lock())
+  cout << *sp;
+
+
+How to free a dynamically allocated arrary?
+delete [] pa;
+
+
+What is the behavior of the following:
+  auto pa = new int[10];
+  delete pa;
+Undefined.
+
+
+What is the behavior of the following:
+  auto p = new int(42);
+  delete [] p;
+Undefined.
