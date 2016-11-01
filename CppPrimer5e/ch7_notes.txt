@@ -159,4 +159,60 @@ Mark ctor declaration explicit keyword (do not mark the external definition). Fo
 struct Foo { explicit Foo(string s); };
 
 
-explicit direct init (296)
+What is the behavior of the following:
+  struct Foo { explicit Foo(string s) { } };
+  Foo f = "Hello";
+Error. Cannot implicitly convert char* to Foo.
+
+
+How to declare a private static member?
+class Foo {
+  static int value;
+};
+
+How to define value to 42?
+  class Foo {
+    static int value;
+  };
+int Foo::value = 42;
+
+
+What is the behavior of the following:
+  class Foo {
+    static Foo f;
+  }
+Correct. Although Foo is an incomplete, f is ok since it is static.
+
+What is the behavior of the following:
+  class Foo {
+    Foo f;
+  }
+Error. Foo is an incomplete type. Nonstatic data members can only be pointers or references.
+
+What is the behavior of the following:
+  struct Foo {
+    void process(int = value);
+    private: static int value;
+  };
+Correct. Static data members may be used as default arguments.
+
+What is the behavior of the following:
+  struct Foo {
+    void process(int = value);
+    private: int value;
+  };
+Error. Only static data members may be used as default arguments.
+
+
+What is the behavior of the following:
+  class Foo {
+    static int value = 42;
+  };
+Error. In-class initialization of static members only supported for const integral types.
+
+
+What is the behavior of the following:
+  class Foo {
+    static const string value = "Hello";
+  };
+Error. In-class initialization of static members only supported for const integral types.
