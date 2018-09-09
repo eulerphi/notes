@@ -1,4 +1,5 @@
-Logical Form and Logical Equivalence
+Epp 1.1 Logical Form and Logical Equivalence
+
 
 Who wrote the first great treatises on logic?
 Aristotle
@@ -32,15 +33,15 @@ math: how to write the logical negation of p?
 ~p
 
 
-math: what does "p ^ q" mean?
+math: what does "p ∧ q" mean?
 p and q
 
 
 math: how to write the conjunction of p and q?
-p ∨ q
+p ∧ q
 
 
-math: what does "p V q" mean?
+math: what does "p ∨ q" mean?
 p or q
 
 
@@ -53,14 +54,14 @@ math: what is the order of evaluation for "~p ^ q"?
 
 
 math: what is the order of evaluation for "p ^ q ∨ r" mean?
-Ambigious. ^ and ∨ are coequal in order
+Ambigious. ∧ and ∨ are coequal in order
 
 
 math: what is a compound statement?
-A statement composed of other statements using connectives (e.g. ^, ∨, ->)
+A statement composed of other statements using connectives (e.g. ∧, ∨, →)
 
 
-math: what is the logical form of "it is not hot but not sunny"?
+math: what is the logical form of "it is not hot but it is sunny"?
 (it is not hot) ∧ (it is sunny)
 
 
@@ -69,7 +70,7 @@ math: what is the logical form of "it is neither hot nor sunny"?
 
 
 math: what is the Logical form of "x <= a"?
-(x < a) V (x = a)
+(x < a) ∨ (x = a)
 
 
 math: what is the logical form of "a <= x <= b"?
@@ -180,7 +181,7 @@ math: p ∨ t ≡ ... (univeral bound law)?
 t
 
 
-math: p ∨ c ≡ ... (univeral bound law)?
+math: p ∧ c ≡ ... (univeral bound law)?
 c
 
 

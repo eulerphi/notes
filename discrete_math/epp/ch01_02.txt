@@ -1,0 +1,88 @@
+Epp 1.2 Conditional Statements
+
+
+math: what does "p → q" mean?
+if p then q
+
+
+math: how to write the conditional of q by p?
+p → q
+
+
+math: when is "p → q" false?
+p = true, q = false
+
+
+math: what is the order of evaluation for "p ∨ q → r"?
+(p ∨ q) → r
+
+
+math: when is something vacuously true?
+When a statement is meaninglessly true (e.g. if the moon is made of cheese, then I am a billionaire)
+
+
+math: p → q ≡ ...?
+~p ∨ q
+
+
+math: ~(p → q) ≡ ...?
+p ∧ ~q
+
+
+math: what is the negation of "If Sara lives in Athens, then she lives in Greece"?
+Sara lives in Athens and does not live in Greece
+
+
+math: p → q ≡ ... (contrapositive)?
+~q → ~p
+
+
+math: what is the contrapositive of "If today is Easter then tomorrow is Monday"?
+If tomorrow is not Monday then today is not Easter
+
+
+math: p → q ≡ ... (converse)?
+q → p
+
+
+math: what is the converse of "If today is Easter then tomorrow is Monday"?
+If tomorrow is Monday then today is Easter
+
+
+math: p → q ≡ ... (inverse)?
+~p → ~q
+
+
+math: what is the inverse of "If today is Easter then tomorrow is Monday"?
+If today is not Easter then tomorrow is not Monday
+
+
+math: what does "p only if q" mean?
+~q → ~p
+
+
+math: what does "John will break the record only if he runs < 4 min/mile" mean?
+If John does not run < 4 min/mile, then he will not break record
+
+
+math: what does "p ↔ q" mean?
+p if, and only if, q
+
+
+math: how to write the biconditional of p and q?
+p ↔ q
+
+
+math: when is "p ↔ q" true?
+when both are true or false
+
+
+math: how to write "p if, and only if, q"?
+p ↔ q
+
+
+math: how to abbreviate "if and only if"?
+iff
+
+
+math: 
