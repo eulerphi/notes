@@ -85,4 +85,33 @@ math: how to abbreviate "if and only if"?
 iff
 
 
-math: 
+math: p ↔ q ≡ ...(with conditional)?
+(p → q) ∧ (q → p)
+
+
+math: what is the order of evaluation for "p → q ↔ r"?
+Ambigious. → and ↔ are coequal in order
+
+
+math: p ↔ q ≡ ... (without conditional)?
+(~p ∨ q) ∧ (~q ∨ p)
+
+
+math: what does "r is a sufficient condition for s" mean?
+if r then s
+
+
+math: what does "r is a necessary condition for s" mean?
+if not r then not s
+
+
+math: what does "r is a necessary and sufficient condition for s" mean?
+r if, and only if, s
+
+
+math: what is the logical form of "Pia's birth on U.S. soil is a sufficient condition to be a U.S. citizen"?
+If (Pia was born on U.S. soil) then (she is a U.S. citizen)
+
+
+math: what is the logical form of "George attaining age 35 is necessary condition for his being president of U.S."?
+if (George is younger than 35 years) then (he cannot be president)
