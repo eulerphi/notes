@@ -4,6 +4,10 @@ math: what is a predicate?
 A template sentence that takes a finite number of variables to become a statement
 
 
+math: what is a predicate variable's domain?
+The set of all values ???
+
+
 math: What does "R" mean?
 The set of all real numbers
 
@@ -20,12 +24,29 @@ math: What does "∈" mean?
 element of a set
 
 
+math: What does "∉" mean?
+not an element of a set
+
+
 math: What does "x ∈ Z⁺" mean?
 x is a positive integer
 
 
-math: What does "x ∈ Q⁻" mean?
-x is a positive integer
+math: What does "x ∉ Q⁻" mean?
+x is a negative rational number
+
+
+math: What does "P(x) ⇒ Q(x)" mean?
+Every element in P(x)'s truth set is in Q(x)'s truth set
+
+
+math: What does "P(x) ⇔ Q(x)" mean?
+P(x) and Q(x) have identical truth sets
+
+
+math: What is the truth set of:
+    { x ∈ Z⁺ | 0 < x < 5 }
+{ 1, 2, 3, 4 }
 
 
 math: What does "∀" mean?
@@ -64,6 +85,14 @@ math: When is an existential statement false?
 ∀x ∈ D, ~Q(x)
 
 
+math: What does "{ x ∈ D | P(x) }" mean?
+The set of all x in D such that P(x) is true
+
+
+math: What is a predicate's truth set?
+The set of all domain values that make the predicate true
+
+
 math: Restate informally:
     ∀x ∈ Z, x² ≥ 0
 All integers have nonnegative squares
@@ -91,7 +120,3 @@ math: What is the form of the universal conditional statement?
 math: Restate informally:
     Vx ∈ R, (x > 2) → (x² > 4)
 If a real number is greater than 2, thens its square is greater than 4
-
-
-math: 
-
