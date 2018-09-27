@@ -1,8 +1,8 @@
 :set encoding=utf-8
 :set renderoptions=type:directx
+:digraph (! 8713
 
 To redraw: ^l
-
 
 ^k followed by column 2, or
 ^v followed by u and then column 3
@@ -26,7 +26,7 @@ To redraw: ^l
 ∅	/0	2205	8709	EMPTY SET
 ∴	.:	2234	8756	THEREFORE
 ∈	(-	2208	8712	ELEMENT OF
-∉		2209	8713	NOT ELEMENT OF
+∉	(!	2209	8713	NOT ELEMENT OF
 ∋	-)	220B	8715	CONTAINS AS MEMBER
 ¹	1S	0xb9	185	SUPERSCRIPT ONE
 ²	2S	0xb2	178	SUPERSCRIPT TWO
