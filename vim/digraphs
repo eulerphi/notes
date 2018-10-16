@@ -2,7 +2,10 @@
 :set renderoptions=type:directx
 :digraph (! 8713
 
-To redraw: ^l
+To redraw:
+    ^l
+To reload vimrc:
+    :so %
 
 ^k followed by column 2, or
 ^v followed by u and then column 3
@@ -37,3 +40,4 @@ To redraw: ^l
 ₃	3s	2083	8323	SUBSCRIPT THREE
 ∏	*P	220F	8719	N-ARY PRODUCT `
 ∑	+Z	2211	8721	N-ARY SUMMATION `
+·	.M	0xb7	183	MIDDLE DOT
