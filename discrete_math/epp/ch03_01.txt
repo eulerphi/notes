@@ -4,18 +4,6 @@ math: Is 1 prime?
 No. Primes are > 1.
 
 
-math: What is the parity of 0?
-Even. 0 = 0 · 2
-
-
-math: What is the parity of -61?
-Odd. -61 = 2 (-30) + 1
-
-math: Suppose a, b ∈ Z, what is the parity of:
-    10a + 8b + 1
-Odd. 2 (5a + 4b) + 1
-
-
 math: Suppose n is prime,
     ∀ r, s ∈ Z, n = r · s → r ...
 r = 1 ∨ s = 1
