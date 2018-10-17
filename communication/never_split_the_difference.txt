@@ -27,3 +27,24 @@ Never Split the Difference by Chris Voss
         -Make sole and all-encompassing focus the other person and what they have to say
         -Learn their needs by keeping them talking about their wants
         -Need to go slow to make the other person feel they have been heard
+
+== Chapter 3 Don't Feel Their Pain, Label It
+
+    Positive Habits
+    + Labeling
+        -Steps:
+            1. Say "It [seems|sounds|looks] like..."
+            2. Identify emotion
+            3. Silence (>4 seconds)
+        -Labeling:
+            -Positive emotions reinforces them
+            -Negative emotions diffuses them
+            -Generates feelings of safety, well-being, and trust
+        -Use "It" instead of "I" to keep yourself out of the spotlight
+        -If they disagree, you can always say, "I didn't say that was what it was. I just said it seems like that"
+    + Accusation Audit
+        -List the worst things the other party could say about you and say them before the other person can
+        -You may feel...
+        -Don't preface with "I don't want to sound harsh..."
+
+== Chapter 4 Beware "Yes" - Master "No"
