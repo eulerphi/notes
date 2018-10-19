@@ -1,0 +1,605 @@
+# Epp 1.1 Logical Form and Logical Equivalence
+
+
+Who wrote the first great treatises on logic?
+Aristotle
+
+
+What is the central concept in deductive logic?
+The argument form
+
+
+math: what is argument form?
+A sequence of abstract statements that necessarily follow from preceding statements
+
+
+math: what is a statement?
+A sentence that is true or false but not both
+
+
+math: Is "he is a college student" a statement?
+No. The sentence is neither true nor false
+
+
+math: convert "he is a college student" into a statement
+Clarify who "he" is
+
+
+math: what does "~p" mean?
+Not p
+
+
+math: how to write the logical negation of p?
+~p
+
+
+math: what does "p ∧ q" mean?
+p and q
+
+
+math: how to write the conjunction of p and q?
+p ∧ q
+
+
+math: what does "p ∨ q" mean?
+p or q
+
+
+math: how to write the disjunction of p and q?
+p ∨ q
+
+
+math: what is the order of evaluation for "~p ^ q"?
+(~p) ^ q
+
+
+math: what is the order of evaluation for "p ^ q ∨ r" mean?
+Ambigious. ∧ and ∨ are coequal in order
+
+
+math: what is a compound statement?
+A statement composed of other statements using connectives (e.g. ∧, ∨, →)
+
+
+math: what is the logical form of "it is not hot but it is sunny"?
+(it is not hot) ∧ (it is sunny)
+
+
+math: what is the logical form of "it is neither hot nor sunny"?
+(it is not hot) ∧ ~(it is not sunny)
+
+
+math: what is the Logical form of "x <= a"?
+(x < a) ∨ (x = a)
+
+
+math: what is the logical form of "a <= x <= b"?
+(a ≤ x) ∧ (x ≤ b)
+
+
+math: when is the conjunction of p and q true?
+When p and q are both true
+
+
+math: when is the disjunction of p and q false?
+When p and q are both false
+
+
+math: what is a tautology?
+A statement or form that is always true regardless of statement variables.
+
+
+math: what does the symbol "t" mean?
+Tautology
+
+
+math: what is a contradiction?
+A statement or form that is always false regardless of statement variables.
+
+
+math: what does the symbol "c" mean?
+Contradiction
+
+
+math: ~(~p) ≡ ... (double negative law)?
+p
+
+
+math: ~(p ∨ q) ≡ ... (De Morgan's law)?
+~p ∧ ~q
+
+
+math: ~p ∧ ~q ≡ ... (De Morgan's law)?
+~(p ∨ q)
+
+
+math: ~(p ∧ q) ≡ ... (De Morgan's law)? 
+~p ∨ ~q 
+
+
+math: ~p ∨ ~q ≡ ... (De Morgan's law)?
+~(p ∧ q) 
+
+
+math: p ∧ q ≡ ... (commutative law)?
+q ∧ p
+
+
+math: p ∨ q ≡ ... (commutative law)?
+q ∨ p
+
+
+math: (p ∧ q) ∧ r ≡ ... (associative law)?
+p ∧ (q ∧ r)
+
+
+math: (p ∨ q) ∨ r ≡ ... (associative law)?
+p ∨ (q ∨ r)
+
+
+math: p ∧ (q ∨ r) ≡ ... (distributive law)?
+(p ∧ q) ∨ (p ∧ r)
+
+
+math: (p ∧ q) ∨ (p ∧ r) ≡ ... (distributive law)?
+p ∧ (q ∨ r)
+
+
+math: p ∨ (q ∧ r) ≡ ... (distributive law)?
+(p ∨ q) ∧ (p ∨ r)
+
+
+math: (p ∨ q) ∧ (p ∨ r) ≡ ... (distributive law)?
+p ∨ (q ∧ r)
+
+
+math: p ∧ t ≡ ... (identity law)?
+p
+
+
+math: p ∨ c ≡ ... (identity law)?
+p
+
+
+math: p ∨ ~p ≡ ... (negation law)?
+t
+
+
+math: p ∧ ~p ≡ ... (negation law)?
+c
+
+
+math: p ∧ p ≡ ... (idempotent law)?
+p
+
+
+math: p ∨ p ≡ ... (idempotent law)?
+p
+
+
+math: p ∨ t ≡ ... (univeral bound law)?
+t
+
+
+math: p ∧ c ≡ ... (univeral bound law)?
+c
+
+
+math: p ∨ (p ∧ q) ≡ ... (absorption law)?
+p
+
+
+math: p ∧ (p ∨ q) ≡ ... (absorption law)?
+p
+
+
+math: ~t ≡ ...?
+c
+
+
+math: ~c ≡ ...?
+t
+
+
+# Epp 1.2 Conditional Statements
+
+
+math: what does "p → q" mean?
+if p then q
+
+
+math: how to write the conditional of q by p?
+p → q
+
+
+math: when is "p → q" false?
+p = true, q = false
+
+
+math: what is the order of evaluation for "p ∨ q → r"?
+(p ∨ q) → r
+
+
+math: when is something vacuously true?
+When a statement is meaninglessly true (e.g. if the moon is made of cheese, then I am a billionaire)
+
+
+math: p → q ≡ ...?
+~p ∨ q
+
+
+math: ~(p → q) ≡ ...?
+p ∧ ~q
+
+
+math: what is the negation of "If Sara lives in Athens, then she lives in Greece"?
+Sara lives in Athens and does not live in Greece
+
+
+math: p → q ≡ ... (contrapositive)?
+~q → ~p
+
+
+math: what is the contrapositive of "If today is Easter then tomorrow is Monday"?
+If tomorrow is not Monday then today is not Easter
+
+
+math: p → q ≡ ... (converse)?
+q → p
+
+
+math: what is the converse of "If today is Easter then tomorrow is Monday"?
+If tomorrow is Monday then today is Easter
+
+
+math: p → q ≡ ... (inverse)?
+~p → ~q
+
+
+math: what is the inverse of "If today is Easter then tomorrow is Monday"?
+If today is not Easter then tomorrow is not Monday
+
+
+math: what does "p only if q" mean?
+~q → ~p
+
+
+math: what does "John will break the record only if he runs < 4 min/mile" mean?
+If John does not run < 4 min/mile, then he will not break record
+
+
+math: what does "p ↔ q" mean?
+p if, and only if, q
+
+
+math: how to write the biconditional of p and q?
+p ↔ q
+
+
+math: when is "p ↔ q" true?
+when both are true or false
+
+
+math: how to write "p if, and only if, q"?
+p ↔ q
+
+
+math: how to abbreviate "if and only if"?
+iff
+
+
+math: p ↔ q ≡ ...(with conditional)?
+(p → q) ∧ (q → p)
+
+
+math: what is the order of evaluation for "p → q ↔ r"?
+Ambigious. → and ↔ are coequal in order
+
+
+math: p ↔ q ≡ ... (without conditional)?
+(~p ∨ q) ∧ (~q ∨ p)
+
+
+math: what does "r is a sufficient condition for s" mean?
+if r then s
+
+
+math: what does "r is a necessary condition for s" mean?
+if not r then not s
+
+
+math: what does "r is a necessary and sufficient condition for s" mean?
+r if, and only if, s
+
+
+math: what is the logical form of "Pia's birth on U.S. soil is a sufficient condition to be a U.S. citizen"?
+If (Pia was born on U.S. soil) then (she is a U.S. citizen)
+
+
+math: what is the logical form of "George attaining age 35 is necessary condition for his being president of U.S."?
+if (George is younger than 35 years) then (he cannot be president)
+
+
+# Epp 1.3 Valid and Invalid Arguments
+
+
+math: What does "∴" mean?
+Therefore
+
+
+math: When is "∴" used?
+To mark the conclusion of an argument
+
+
+math: When is an argument form valid?
+For every case where the premises are true, the conclusion is also true
+
+
+math: Is the following argument valid?
+    p1 | p2 | c
+    1  | 1  | 0
+No. The premises are true and the conclusion is false.
+
+
+math: Is the following argument valid?
+    p1 | p2 | c
+    1  | 1  | 1
+Yes. The premises are true and the conclusion is true.
+
+
+math: Is the following argument valid?
+    p1 | p2 | c
+    0  | 1  | 0
+    1  | 1  | 1
+Yes. When the premises are true, the conclusion is true.
+
+
+math: Is the following argument valid?
+    p1 | p2 | c
+    1  | 0  | 1
+Yes (vacuously).
+
+
+math: what is modus ponens?
+A valid argument form meaning "method of affirming".
+
+
+math: what is the argument form of modus ponens?
+--
+  p → q
+  p
+∴ q
+
+
+math: what is the argument form of?
+      If today is Easter, then tomorrow is Monday
+      Today is Easter
+    ∴ Tomorrow is Monday
+--
+modus ponens
+
+
+math: what is the name of the argument form?
+      p → q
+      p
+    ∴ q
+Modus ponens
+
+
+math: what is modus tollens?
+A valid argument form meaning "method of denying"
+
+
+math: what is the argument form of modus tollens?
+--
+  p → q
+  ~q
+∴ ~p
+
+
+math: what is argument form of?
+      If Zeus is human, then Zeus is mortal
+      Zeus is not mortal
+    ∴ Zeus is not human
+Modus tollens
+
+
+math: what is the name of the argument form?
+      p → q
+      ~q
+    ∴ ~p
+Modus tollens
+
+
+math: what is the name of the argument form?
+      p
+    ∴ p ∨ q
+Disjunctive addition
+
+
+math: what is the name of the argument form?
+      q
+    ∴ p ∨ q
+Disjunctive addition
+
+
+math: what is the argument form of disjunctive addition?
+--
+  p
+∴ p ∨ q
+
+
+math: is the following argument valid?
+      Jim is tall
+    ∴ Jim is tall or Sue is blond
+Valid by disjunctive addition
+
+
+math: what is the name of the argument form?
+      p ∧ q
+    ∴ p
+Conjunctive simplication
+
+
+math: what is the name of the argument form?
+      p ∧ q
+    ∴ q
+Conjunctive simplication
+
+
+math: what is the argument form of conjunctive simplication?
+--
+  p ∧ q
+∴ p
+
+
+math: is the following argument valid?
+      Gary is young and Mary is old
+    ∴ Mary is old
+Valid by conjunctive simplication
+
+
+math: what is the name of the argument form?
+      p
+      q
+    ∴ p ∧ q
+Conjunctive addition
+
+
+math: what is the argument form of conjunctive addition?
+--
+  p
+  q
+∴ p ∧ q
+
+
+math: is the following argument valid?
+      Winter is cold
+      Summer is hot
+    ∴ Winter is cold and Summer is hot
+Valid by conjunctive simplication
+
+
+math: what does "syllogism" mean?
+Deductive reasoning
+
+
+math: what is the name of the argument form?
+      p ∨ q
+      ~p
+    ∴ q
+Disjunctive syllogism
+
+
+math: what is the name of the argument form?
+      p ∨ q
+      ~q
+    ∴ p
+Disjunctive syllogism
+
+
+math: what is the argument form of disjunctive syllogism?
+--
+  p ∨ q
+  ~q
+∴ p
+
+
+math: is the following argument valid?
+      Pam is born in January or Pam is born in May
+      Pam is not born in May
+    ∴ Pam is born in January
+Valid by Disjunctive syllogism
+      
+math: what is the name of the argument form?
+      p → q
+      q → r
+    ∴ p → r
+Hypothetical syllogism
+
+
+math: what is the argument form of hypothetical syllogism?
+--
+  p → q
+  q → r
+∴ p → r
+
+
+math: what is the name of the argument form?
+      p ∨ q
+      p → r
+      q → r
+    ∴ r
+Constructive dilemma
+
+
+math: what is the name of the argument form?
+      p → r
+      q → s
+      ~r ∨ ~s
+    ∴ ~p ∨ ~q
+Destructive dilemma
+
+
+math: is the following argument valid?
+      If Jim is a cheater, then he sits in the back row
+      Jim sits in the back row
+    ∴ Jim is a cheater
+--
+Invalid by converse fallacy
+
+
+math: what is the argument form of?
+      If Jim is a cheater, then he sits in the back row
+      Jim sits in the back row
+    ∴ Jim is a cheater
+--
+  p → q
+  q
+∴ p
+
+
+math: what is the name of the following argument form?
+      If Jim is a cheater, then he sits in the back row
+      Jim sits in the back row
+    ∴ Jim is a cheater
+Converse fallacy
+
+
+math: what is the argument form of the converse fallacy?
+--
+  p → q
+  q
+∴ p
+
+
+math: is the following argument valid?
+      If interest rates increase, then stock prices will decrease
+      Interest rates are not increasing
+    ∴ Stock prices will not decrease
+--
+Invalid by inverse fallacy
+
+
+math: what is the argument form of?
+      If interest rates increase, then stock prices will decrease
+      Interest rates are not increasing
+    ∴ Stock prices will not decrease
+--
+  p → q
+  ~p
+∴ ~q
+
+
+math: what is the name of the following argument form of?
+      If interest rates increase then stock prices will decrease
+      Interest rates are not increasing
+    ∴ Stock prices will not decrease
+Inverse fallacy
+
+
+math: what is the argument form of the inverse fallacy?
+--
+  p → q
+  ~p
+∴ ~q

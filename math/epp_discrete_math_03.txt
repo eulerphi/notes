@@ -1,0 +1,165 @@
+# Epp 3.1 Elementary Number Theory and Methods of Proof
+
+Is 1 prime?
+No. Primes are > 1.
+
+
+   n ∈ ℙ
+   ∀ r, s ∈ Z
+   n = r · s
+?∴ r ..., s ...
+----
+r = 1 ∨ s = 1
+
+
+   n ∉ ℙ
+   ∃ r, s ∈ Z
+   n = r · s
+?∴ r ..., s ...
+----
+r ≠ 1 ∧ s ≠ 1
+
+
+When is the following true:
+    ∃ x ∈ D | Q(x)
+Q(x) for at least one x in D
+
+
+math: What is a constructive proof of existence?
+To prove an existential statement by finding a domain element that satisfies the property
+
+
+math: What is a nonconstructive proof of existence?
+To prove an existential statement by showing that assuming otherwise leads to contradiction
+
+
+math: What is the method of exhaustion?
+To prove a universal statement by showing that all domain elements satisfy the property
+
+
+math: What is the method of direct proof?
+To prove a universal statement by showing that any particular but arbitrary domain element satisfies the property
+
+
+math: What are the steps of a direct proof?
+1.) Rewrite statement as ∀ x ∈ D, P(x) → Q(x)
+2.) Suppose x is a particular but arbitrarily chosen domain element
+3.) Suppose P(s)
+4.) Prove Q(x)
+
+
+math: What does "begging the question" mean?
+A logical fallacy where the truth of the conclusion is assumed.
+
+
+How to disprove:
+    ∀ x ∈ D, P(x) → Q(x)
+Find x such that P(x) and ~Q(x)
+
+
+# Epp 3.2 Direct Proof and Counterexample II: Rational Numbers
+
+
+math: When is a number rational?
+∃ a, b ∈ Z | r = a / b
+
+
+math: Is 0.1212... rational?
+Yes. 100x - x = 99x
+          99x = 12
+            x = 12 / 99
+
+
+math: Is 2.0222... rational?
+Yes. 100x - 10x = 90x
+            90x = 182
+              x = 182 / 90
+
+
+math: What is a theorem?
+A centrally important statement that is true
+
+
+math: What is a lemma?
+A statement that is only of interest to prove a theorem
+
+
+math: What is a corollery?
+A statement that follows easily from a theorem
+
+
+# Epp 3.3 Direct Proof and Counterexample III: Divisibility
+
+
+math: What does "d | n" mean (informally)?
+d divides n
+
+
+math: What does "d | n" mean (formally)?
+∃ k ∈ Z, n = d · k
+
+
+math: Is the following true?
+    (k ≠ 0) → (k | 0)
+Yes. 0 = k · 0
+
+
+   a, b ∈ Z⁺
+   a | b
+?∴ a ≤ b
+----
+Yes. ∃ k ∈ Z⁺, b = k · a
+     1 ≤ k
+     a ≤ k · a
+     a ≤ b
+
+
+   a, b ∈ Z⁺
+   b = k · a
+?∴ k ∈ ...
+----
+k ∈ Z⁺
+
+
+   a, b ∈ Z
+?∴ is "3a + 9b" a multiple of 3
+----
+Yes. 3a + 9b = 3 · (a + 3b)
+
+   a, b ∈ Z
+?∴ 5 is a factor of 10ab
+----
+Yes. 10ab = 5 · (2ab)
+
+
+math: What is the unique factorization theorem?
+For all integers > 1, there exists a unique expression:
+    n = p₁ᵉ¹ · p₂ᵉ² · ... · pₖᵉᵏ
+    {p₁, ... pₖ} ∈ ℙ, {e1, ... ek} ∈ Z⁺
+
+
+math: What is the standard form of 100?
+100 = 2² · 5²
+
+
+math: What is the standard form of 24?
+24 = 2³ · 3
+
+
+   m ∈ Z
+   8 · 5 · m = 17 · 10 · 4
+?∴ 17 | m
+----
+  8 · 5 · m = 17 · 10 · 4
+  2³ · 5 · m = 2³ · 5 · 17 (unique factorization)
+∴ 17 | m
+
+
+   m, n ∈ Z⁺
+   m² - n² = 20
+?∴ m = ..., n = ...
+----
+  m² - n² = (m + n)(m - n)
+  20 = (even) · (even) ∨ (odd) · (odd)
+  20 = 1 · 20 ∨ 2 · 10 ∨ 4 · 5
+∴ m = 6, n = 4

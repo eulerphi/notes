@@ -1,0 +1,81 @@
+math: what is the reciprocal of some real number a?
+1 / a
+
+
+math: what is the additive inverse of some real number a?
+(-a)
+
+
+math: what is the name of the following property:
+    a · b = 0 → a = 0 ∨ b = 0
+Zero product property
+
+
+math: if a · b = 0, then a = ... (zero product property)
+a = 0 or b = 0
+
+
+math: if a ≠ 0 and b ≠ 0, then a · b ... (zero product property)
+a · b ≠ 0
+
+
+math: a, b ∈ R⁺ → (a + b) ∈ ...
+(a + b) ∈ R⁺
+
+
+math: a, b ∈ Z⁺ → (a · b) ∈ ...
+(a · b) ∈ Z⁺
+
+
+math: (a + b) ∉ R⁺ → a ∉ ...
+a ∉ R⁺ ∨ b ∉ R⁺
+
+
+math: Suppose n ∈ Z, what is the parity of:
+    n · (n + 1)
+Even
+
+
+math: What is the parity of:
+    (odd) · (odd)
+Odd
+
+
+math: What is the parity of:
+    (even) · (even)
+Even
+
+
+math: What is the parity of:
+    (even) · (odd)
+Even
+
+
+math: What is the parity of:
+    (odd) + (odd)
+Even
+
+
+math: What is the parity of:
+    (even) + (even)
+Even
+
+
+math: What is the parity of:
+    (odd) + (even)
+Odd
+
+
+math: What is the parity of:
+    (odd) - (odd)
+Even
+
+
+math: What is the parity of:
+    (even) - (even)
+Even
+
+
+math: What is the parity of:
+    (odd) - (even)
+Odd
