@@ -1,3 +1,42 @@
+# Properties of Real Numbers
+
+math: What is the commutative law?
+a + b = b + a
+a · b = b · a
+
+
+math: a + b = ... (commutative law)
+b + a
+
+
+math: a · b = ... (commutative law)
+b · a
+
+math: What is the associative law?
+(a + b) + c = a + (b + c)
+(a · b) · c = a · (b · c)
+
+
+math: (a + b) + c = ... (associative law)
+a + (b + c)
+
+
+math: (a · b) · c = ... (associative law)
+a · (b · c)
+
+
+math: What is the distributative law?
+a · (b + c) = ab + ac
+
+
+math: a · (b + c) = ... (distributative law)
+ab + ac
+
+
+math: ab + ac = ... (distributative law)
+a · (b + c)
+
+
 math: what is the reciprocal of some real number a?
 1 / a
 
@@ -29,6 +68,9 @@ math: a, b ∈ Z⁺ → (a · b) ∈ ...
 
 math: (a + b) ∉ R⁺ → a ∉ ...
 a ∉ R⁺ ∨ b ∉ R⁺
+
+
+# Parity
 
 
 math: Suppose n ∈ Z, what is the parity of:
@@ -79,3 +121,109 @@ Even
 math: What is the parity of:
     (odd) - (even)
 Odd
+
+
+# Polynomials
+
+
+math: What is a polynomial?
+Sums and differences of polynomial "terms" (e.g. 4x² + 1)
+
+
+math: What is a quadratic?
+A polynomial of the form: ax² ± bx ± c
+
+
+math: What is a binomial?
+A polynomial of the form: axᵐ ± bxⁿ
+
+
+math: What is a trinomial?
+A polynomial of the form: axᵐ ± bxⁿ ± cxᵏ
+
+
+math: Is "6x⁻²" a polynomial term?
+No. The exponent is negative.
+
+
+math: Is "1 / x²" a polynomial term?
+No. The variable is in the denominator.
+
+
+math: Is "√(x)" a polynomial term?
+No. The exponent is not an interger.
+
+
+math: Is "√(3)x⁴⁷" a polynomial term?
+Yes. The variable's exponent is a nonnegative interger.
+
+
+math: How to write a polynomial in descending order?
+Order from highest degree term to lowest (e.g. x² + 72x + 10⁴x⁰).
+
+
+math: What is the degree of a polynomial?
+The largest power of any variable (e.g. x² + 2⁴ is second degree).
+
+
+math: What is the degree of "x⁵ + x³ + 2¹⁰"?
+Fifth degree.
+
+
+math: What is a sum of squares?
+a² + b²
+
+
+math: What is a difference of squares?
+a² - b²
+
+
+math: What is a sum of cubes?
+a³ + b³
+
+
+math: What is a difference of cubes?
+a³ - b³
+
+
+# Factoring
+
+
+math: Factor: a² + b²
+There is no formula for factoring sums of squares.
+
+
+math: Factor: a² - b²
+(a + b)(a - b)
+
+
+math: Factor: 4x² - 25
+= (2x)² - 5²
+= (2x + 5)(2x - 5)
+
+math: Factor: -12x² + 100
+= (-3)((2x)² + 5²)
+= (-3)(2x + 5)(2x - 5)
+
+
+math: Factor: a³ + b³
+(a + b)(a² - ab + b²)
+
+
+math: Factor: a³ - b³
+(a - b)(a² + ab + b²)
+
+
+math: Factor: x³ - 8
+= x³ - 2³
+= (x - 2)(x² + 2x + 4)
+
+
+math: Factor: 27x³ + 1
+= (3x)³ + 1³
+= (3x + a)(9x² - 3x + 1)
+
+
+math: Factor: x³y⁶ - 64
+= (xy²)³ - 4³
+= (xy² - 4)(xy² + 4xy² + 16)

@@ -42,10 +42,10 @@ To prove a universal statement by showing that any particular but arbitrary doma
 
 
 math: What are the steps of a direct proof?
-1.) Rewrite statement as ∀ x ∈ D, P(x) → Q(x)
-2.) Suppose x is a particular but arbitrarily chosen domain element
-3.) Suppose P(s)
-4.) Prove Q(x)
+1. Rewrite statement as ∀ x ∈ D, P(x) → Q(x)
+2. Suppose x is a particular but arbitrarily chosen domain element
+3. Suppose P(s)
+4. Prove Q(x)
 
 
 math: What does "begging the question" mean?
@@ -160,6 +160,21 @@ math: What is the standard form of 24?
 ?∴ m = ..., n = ...
 ----
   m² - n² = (m + n)(m - n)
-  20 = (even) · (even) ∨ (odd) · (odd)
-  20 = 1 · 20 ∨ 2 · 10 ∨ 4 · 5
+  20 = (even · even) ∨ (even · odd)
+  20 = (1 · 20) ∨ (2 · 10) ∨ (4 · 5)
 ∴ m = 6, n = 4
+
+
+# 3.6 Indirect Argument: Contradiction and Contraposition
+
+
+math: What is the method of contradiction?
+A proof that supposes a statement as false and then shows this is contradictory
+
+
+math: What is the method of proof by contraposition?
+A direct proof of a statement's contraposition
+
+
+math: What method to prove: "n² is even → n is even"?
+Method of proof by contraposition (i.e. prove "n is odd → n² is odd")
