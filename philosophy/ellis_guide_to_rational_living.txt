@@ -1,0 +1,99 @@
+A Guide To Rational Living by Albert Ellis
+
+== Chapter 1: How Far Can You Go With Self-Therapy? ==
+
+Main Argument: Self-therapy is a necessary, but rarely sufficient part of behavior change.
+    -Self-therapy is limited
+        -People misunderstand, distort, and oversimplify presented principles because they read what they _want_ to read.
+        -People don't apply the concepts that they learn.
+    -Therapy compensates for the pitfalls of self-therapy
+        -A trained therapist checks whether a client truly understands the concepts
+        -A trained therapist pushes clients to change.
+        -A trained therapist is able to adapt the generic concepts to your dynamic life.
+    -The book is intended to supplement therapy
+        -Gives interested clients something to read.
+        -For rare individuals the book will be sufficient for behavior change.
+
+
+== Chapter 2: You Largely Feel The Way You Think ==
+
+Main Argument: There is considerable evidence that humans feel the way they think.
+
+Exposition:
+    -Goals (Gs): To stay alive and be reasonably happy or satisfied:
+        (1) by yourself
+        (2) in your relationships with people
+        (3) by producing and achieving
+        (4) by being original and creative
+        (5) by enjoying physical, emotional, and mental activities
+    -Adversities (As): Events, encounters, experiences, or thoughts that interfere with your goals.
+    -Beliefs (Bs): Beliefs, ideas, and philosophies about Adversities.
+    -Rational Beliefs (RBs): Preferences and wishes that Adversities do not occur.
+        -Examples:
+            -I dislike failing at work.
+            -I hate when people treat me unfairly.
+    -Irrational Beliefs (IBs): Strong demands that Adversities must not occur.
+        -Examples:
+            -I absolutely must not fail at work and am a worthless person if I do.
+            -People must never treat me unfairly and are rotten persons if they do.
+    -Consequences (Cs): The result of Adversities and Beliefs.
+    -Healthy Consequences (HCs): Constructive feelings and behavior stemming from the interaction of Adversities and Beliefs.
+        -Examples:
+            -Feelings of regret or disappointment when you fail at work.
+            -Determination and action to improve your skills.
+            -Feelings of displeasure and disappointment when treated unfairly.
+            -Feelings of sadness and regret when you have the flu.
+    -Unhealthy Consequences (UCs): Destructive feelings and behavior stemming from the interaction of Adversities and Beliefs.
+        -Examples:
+            -Feelings of horror and self-downing when you fail at work.
+            -Refusing to improve you skills and look for another job.
+            -Feelings of rage and vindictiveness when treated unfairly.
+            -Feelings of depression and self-pity when you have the flu.
+
+== Chapter 3: Feeling Well By Thinking Straight ==
+
+Main Argument: Rational thinking increases your happiness and helps you achieve your goals.
+    -Rational thinking does not entail being an emotionless robot
+        -Unfounded societal expectation that getting the "most out of life" comes from highly "emotional" experiences
+            -Example: going from deep depression to maniac joy to the bogs of despair
+        -Rational thinking proponents still feel sorrow, pain, joy, and elation
+        -Healthy emoting is rational and helps you achieve your goals
+            -Example: Great desire for love might make you work harder, write poems, etc.
+    -Rational thinking increases happiness
+        -Rational thinking minimizes unhealthy, self-defeating emotions
+        -Pleasant emotions and pursuits surface to the top
+        -Unpleasant emotions (e.g. sorrow and regret) are healthy when they are constructive
+            -Example: as signals that something has gone wrong and had better be corrected
+    -The rational thinking approach is evidence-based
+        -Book contains clinical, experimental, and personal evidence
+        -You can experiment and try the approach for yourself.
+
+Exposition:
+    -Four process responsible for survival and happiness:
+        -Senses (sight, taste, smell, sound, and touch)
+        -Emotions (love, hate, joy, sadness)
+        -Actions (walk, eat, swim, climb, play)
+        -Thought (remember, imagine, hypothesis, conclude)
+    -Four processes are intertwined:
+        -Example 1:
+            1. Sense: See an apple
+            2. Emotion: Desirable or not?
+            3. Thought: Useful or not?
+            4. Action: Pick it up or throw away?
+        -Example 2:
+            1. Action: Pick up a stick
+            2. Sense: See yourself holding stick
+            3. Thought: Consider what to do with stick
+            4. Emotion: Like or dislike stick
+        -Example 3:
+            -Limited: "Jones thinks about the puzzle"
+            -Comprehensive: "Jones perceives-moves-emotes-and-thinks about the puzzle"
+    -Considerable progress using technology to advance:
+        -Senses (e.g. glasses, radar)
+        -Actions (e.g. bicycles, aircrafts)
+        -Thought (e.g. computers)
+    -Emotional maturity and happiness are largely unchanged compared to past centuries
+
+
+
+
