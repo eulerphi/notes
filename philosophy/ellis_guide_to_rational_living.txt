@@ -131,7 +131,7 @@ Main Argument: We learned our beliefs and can relearn them with rational thinkin
     -Your emotional disturbances stem from your learned irrational beliefs.
         -Most continuously negative emotions come from awfulizing. Example:
             A. Your child dies.
-            B. How *Awful*! She *shouldn't* have died! I *can't stand* it!
+            B. How *awful*! She *shouldn't* have died! I *can't stand* it!
             C. Severe depression.
         -You can awfulize about anything (even trivial things).
             Example: Not learning to play violin. Not being a tiddlywinks champion.
@@ -144,3 +144,45 @@ Main Argument: We learned our beliefs and can relearn them with rational thinkin
         -Rational thinking helps you observe your beliefs and determine if they are rational or irrational.
         -We can judge our actions instead of our *self*. Judging the *self* invariably leads to self-damnation and unhealthy emotions.
         -We can change if we know how (e.g. using REBT), work hard to observe their irrational beliefs, and choose rational beliefs.
+
+== Chapter 6: Recognizing And Reducing Neurotic Behavior ==
+
+Main Argument: You need insight to recognize and reduce your neurotic behavior.
+    -Neurosis stems from irrational thinking.
+        -Sensible thinking generally results in healthy emoting.
+        -Stupidity, ignorance, and disturbance block clear thinking and lead to overemotional or apathetic feelings.
+        -Neurosis stems from a lack of insight.
+            -Example: Even for severe abuse, the horrifying reaction to the abuse is a major cause of the trauma (i.e. believing "this *should not* have happened!").
+    -Insight No. 1: To clearly recognize a problem and certain events that precede it.
+        -Conventional insight popularized by psychoanalysis.
+        -Example:
+            Context: Naomi wants to become a teacher.
+            Problem: She makes no effort to study.
+            Insight (partial): She believed this stemmed from her lack of confidence and self-damnation for promiscuity.
+            Insight (fuller):
+                1. Her lack of confidence comes from telling herself:
+                    -"My older sister views me as inadequate. She is right and I can *never* perform adequately".
+                2. Her self-damnation comes from telling herself:
+                    -"Many people view promiscuity as wicked. I behaved promiscuously. I am *wicked*", and
+                    -"Many people believe those that act badly deserve punishment. I acted badly. I *must* punish myself".
+    -Insight No. 2: To clearly see that your irrational beliefs persist because you are continuously reindoctrinating yourself.
+        -Example: Naomi continuously telling herself: "I *should not* be promiscuous. I *need to* keep punishing myself and *must* cleanse myself".
+        -We inevitably self-down and feel depressed if we:
+            -believe failure will be *horrible*,
+            -believe in our intrinsic worthlessness,
+            -and unthinkingly accept others' damning.
+    -Irrational beliefs stem from overgeneralizations and are unprovable and unfalsifiable.
+        -Irrational beliefs are not absolutely wrong, but are impractical because they are self-defeating and needlessly block our goals.
+        -Unprovable and unfalsifiable:
+            -Adversity: I didn't get the job.
+            -Irrational Belief: This is *awful*.
+            -Unhealthy Consequences: Feelings of shame, embarrassment, and depression.
+    -Insight No. 3: To clearly see that you must steadily, persistently, and vigorously work to dispute and change your beliefs.
+        -You can temporarily distract yourself (e.g. changing jobs, joining a cult, abusing alcohol and drugs), but this will not change your irrational beliefs.
+        -Unless you dispute and change your beliefs, you will inevitably return to your neurotic behavior.
+        -You can *choose* to unconditionally accept yourself, and only judge your actions in relation to a goal.
+        -Provable and falsifiable:
+            -Goal: I desire to get this job.
+            -Adversity: I didn't get the job.
+            -Rational Belief: This is unfortunate.
+            -Healthy Consequences: Feelings of disappointment.
