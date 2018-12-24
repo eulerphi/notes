@@ -237,3 +237,39 @@ Main Argument: Despite your childhood abuse, you can *choose* healthy or unhealt
                 -A: Called a liar.
                 -B: I believe they are correct that I have lied. I better stop lying if I want people to trust me.
                 -C: Motivation to deal with people truthfully.
+
+== Chapter 8: Is Reason Always Reasonable? ==
+
+Main Argument: Rational emotive thinking is a framework to experimentally discover what is sensible, efficient, and unself-defeating for *you*.
+    -Humans rarely behave rationally.
+        -Although humans are far brighter than higher apes, they still have strong tendencies to act in prejudiced and ineffectual ways.
+            -Example: The story of Marlo, an unusually intelligent and attractive young woman.
+                -Despite only graduating from high school, she quickly rose to the most responsible secretarial position at work.
+                -Despite career success, she tried to kill herself after an older man refused to divorce his current wife and then marry Marlo.
+                -Irrational belief:
+                    -If a lover disapproves of me, then I am worthless.
+                    -If I am worthless, then my lovers will disapprove of me.
+                    -This is the circular reasoning fallacy (i.e. A → B ∧ B → A).
+        -Humans rarely outgrow their early childhood behavior of dependency and irrationality.
+        -Even after clearly seeing their own self-defeating ways, we still have great difficulty achieving sound and sane behavior.
+    -There is no absolutely good or certain standard of living.
+        -It is impossible to perfectly resolve remaining yourself while simultaneously getting along with others.
+            -Example: Imagine talking with a group of friends.
+                -If you talk about your interests, then you might bore or upset by "hogging the floor".
+                -If you completely go along, then you might sit in pained silence.
+                -If you express strong views, then you might hurt or insult.
+                -If you withhold or cautiously express strong views, you might frustrate yourself.
+        -There is no universal demarcation between reasonable and unreasonable behavior.
+            -Example:
+                -If you only live for today, then you are sabotaging your longer term interests.
+                -If you only live for tomorrow, then you might live an overcautious and dull life.
+                -If you are over-concerned with the regard of others, then you might bend over backwards for others but see yourself as weak.
+                -If you are under-concerned with the regard of others and run roughshod over them, then people might thwart you.
+    -REBT is a framework to experimentally increase your happiness and reduce your unhealthy emotions.
+        -You can use REBT to experimentally discover what is sensible, efficient, and unself-defeating for *you*.
+            -Since there is no universal standard of conduct, what is rational and unself-defeating depends on your goals.
+        -REBT advocates a highly reasoned approach to life, but not rationalizing or intellectualizing.
+            -Rationalizing: Justifying your actions, beliefs, and desires with ostensibly rational explanations.
+                -This excusing of your behavior is the opposite of thinking rationally. 
+            -Intellectualizing: Overemphasizing intellectual pursuits.
+                -This approach results in you compulsively denying and avoiding your emotions.
