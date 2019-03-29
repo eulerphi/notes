@@ -1,0 +1,13 @@
+Introduction To Algorithms by CLRS
+Chapter 4: Divide-and-Conquer
+
+== 4.3 The substitution method ==
+
+Questions:
+-p. 83-84:
+    1.  T(n) = 2T(⌊n/2⌋) + n
+    2.      <= 2 · (c · ⌊n/2⌋) · lg(⌊n/2⌋) + n
+    3.      <= cnlg(n/2) + n
+    4.       = cnlg(n) - cnlg(2) + n
+    5.       = cnlg(n) - cn + n
+    6.      <= cnlgn
